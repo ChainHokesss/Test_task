@@ -1,0 +1,23 @@
+{% extends 'base_generic.html'%}
+
+{% block title %}
+    <title>Home</title> 
+{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <div id="input_form">
+            <label>name0</label>
+            <input name="value0"> <br>
+        </div>
+        <button type="submit">sub</button>
+    </form>
+
+    <button id="add_form" >+</button>
+    <div id="main_form">
+        {% for msg in get_flashed_messages() %}
+            <span> {{msg}}</span>
+        {% endfor %}
+    </div>
+    
+{% endblock %}

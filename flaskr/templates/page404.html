@@ -1,0 +1,10 @@
+{% extends 'base_generic.html'%}
+
+{% block title %}
+    <title>404</title> 
+{% endblock %}
+
+{% block content %}
+    <h1>Page not found 404</h1>
+    <a href="{{url_for('homeView')}}"></a>
+{% endblock %}
